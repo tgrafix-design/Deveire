@@ -2,8 +2,8 @@
 <html>
     <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400, 600,700,800">
-    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,900"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="css/styles.css" rel="stylesheet">
     <meta title="Deveire Frontend Challenge">
     <style>
@@ -16,7 +16,9 @@
             padding: 20px 0 226px;
         }
         .navbar { 
-            height: 100px; color: #fff; display: flex; justify-content: space-around;
+            height: 100px; 
+            color: #fff; 
+            display: flex; justify-content: space-around;
             align-items: center; border-bottom:1px solid rgba(255,255,255,.5);
         }
         .nav-list { list-style-type: none; }
@@ -28,7 +30,10 @@
             color: #fff; 
             text-decoration: none;
             letter-spacing: 1.3px;
-            
+            text-transform: uppercase;
+        }
+        .navbar a:hover { 
+            opacity: .5;   
         }
         .slider { 
             width: auto; 
@@ -277,20 +282,7 @@ width: 549px;
 
   }
 
-  footer p {
-    width: 314px;
-  height: 14px;
-  margin: 0 401px 13px 0;
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.14px;
-  text-align: left;
-  color: #fff;
-  }
+
     </style>
     </head>
 <body>
@@ -302,6 +294,21 @@ width: 549px;
                     srcset="images/deveire-logo@2x.png 2x,
                             images/deveire-logo@3x.png 3x" class="deveire-logo"></a>
             </div>
+            <!-- <style>
+                .menu { display: none;  }
+                .menu-line {
+                    width: 20px; 
+                    height: 3px;
+                    background-color: #fff;
+                    margin-bottom: 4px;
+                }
+
+                @media all and (max-width: 480px) {
+                    .navbar { flex-direction: column; }
+                    .menu { display: block; position: absolute; right:15px; top: 15px;  }
+                }
+            </style>   -->
+
             <ul class="nav-list">
                 <li class="list-item"><a href="#">Home</a></li>
                 <li class="list-item"><a href="#">Features</a></li>
@@ -311,6 +318,11 @@ width: 549px;
                 <li class="list-item"><a href="#">Shop</a></li>
                 <li class="list-item"><a href="#">ShortCodes</a></li>
             </ul>
+            <!-- <div class="menu">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div> -->
         </nav>
 
         <div class="slider">
@@ -320,7 +332,7 @@ width: 549px;
         </div>
     </div>
 
-<div class="features">
+<!-- <div class="features">
     <h3>Features Overview</h3>
     <h4>Some of the Features that are gonna blow your mind off</h4>
     <div class="feature-item">
@@ -489,7 +501,86 @@ width: 549px;
             dignissimos eveniet quae debitis ratione assumenda tempore officiis fugiat dolor. Saepe
             iusto praesentium ullam aliquam impedit.</p>
     </div>
+</div> -->
+
+<style>
+    h3 {
+        width: 711px;
+  height: 23px;
+  margin: 0 53px 30px 11px;
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.03;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444;
+    }
+    .bottom-cta {
+        height: 315px;
+        text-align: center;
+        background-color: #f4f3f4;
+        border-bottom:4px solid #c6c6c6;
+    }
+
+    .bottom-cta button {
+        width: 322px;
+        height: 50px;
+        /* padding: 15px 1px; */
+        border-radius: 2.1px;
+        color: #fff;
+        background-color: #53777a;
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 1.83;
+        letter-spacing: 0.9px;
+    }
+
+    button.start {
+        background-color: #53777a;
+        border-bottom:4px solid #476163;
+    }
+
+    button.signup {
+        background-color: #c02942;
+        border-bottom:4px solid #a30c25;
+    }
+
+    footer { 
+        max-width:1600px; 
+        border-top:2px solid #fff;
+        display: flex; 
+        height:142px; 
+        background: #1e1e1e; 
+        justify-content: space-around; 
+        align-items: center; }
+    footer p { font-family: Lato; font-size:14px; font-weight: 300; line-height: 1.71; letter-spacing: 0.14px; color: #999; }
+    p.icons { text-align: right; }
+    p.icons i { margin-right:17px; }
+    p.icons i:last-child { margin-right:0; }
+</style>
+<div class="bottom-cta">
+    <h3>Starter's Guide to Create Landing Pages</h3>
+    <h4>Building a Landing Page was never so Easy & Interactive</h4>
+    <div class="bottom-cta-content">
+        <button class="start"><i class="fa fa-star" aria-hidden="true"></i> Start Your Free Trial</button><p>- or -</p>
+        <button class="signup"><i class="fa fa-user" aria-hidden="true"></i> Sign up for a Subscription</button>
+    </div>
 </div>
+
+<footer>
+    <div>
+        <p>Copyrights &copy; 2022 All Rights Reserved by Deveire</br >Terms of Use / Privacy Policy</p>
+    </div>
+    <div>
+        <p class="icons"><i class="fa fa-facebook" aria-hidden="true"></i> <i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-google-plus" aria-hidden="true"></i>
+            <i class="fa fa-vimeo" aria-hidden="true"></i><i class="fa fa-pinterest-p" aria-hidden="true"></i><i class="fa fa-github" aria-hidden="true"></i><i class="fa fa-linkedin" aria-hidden="true"></i></p>
+        <p><i class="fa fa-envelope-o" aria-hidden="true"></i> info@deveire.com · <i class="fa fa-headphones" aria-hidden="true"></i> +91-11-6541-6369 · <i class="fa fa-skype" aria-hidden="true"></i> CanvasOnSkype</p>
+    </div>
+</footer>
 <!-- <p>This page is the <code>index.html</code> of <code>deveire-frontent-challenge</code>.</p> -->
 </div>
 </body>
