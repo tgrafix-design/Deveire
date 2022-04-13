@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html>
-<meta title="Deveire Frontend Challenge">
+    <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400, 600,700,800">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,900"/> 
+    <link href="css/styles.css" rel="stylesheet">
+    <meta title="Deveire Frontend Challenge">
+    <style>
+        .main {  }
+        .container { max-width: 1600px; height: 697px; margin: 0 auto;
+            background:#404951 url('images/deveire-background.jpg') no-repeat; }
+        header {
+            height: 697px;
+            margin: 0 0 165px;
+            padding: 20px 0 226px;
+        }
+        .navbar { 
+            height: 100px; color: #fff; display: flex; justify-content: space-around;
+            align-items: center; border-bottom:1px solid rgba(255,255,255,.5);
+        }
+        .nav-list { list-style-type: none; }
+        .nav-list .list-item { display: inline-block; padding: 20px 10px; list-style-type: none; }
+        .navbar a { color: #fff; text-decoration: none; font-size: 13px; font-family: 'Raleway'; font-weight:700;   }
+        h1 { font-size: 24px; font-family: 'Raleway'; font-weight:800; }
+    .h1-text {
+  width: 750px;
+  height: 57px;
+  margin: 36px 29px 0 37px;
+  font-family: Lato-Light;
+  font-size: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #eee;
+}
+        img.deveire-logo {
+  width: 152px;
+  height: 75px;
+  margin: 0 37px 5px 236px;
+  object-fit: contain;
+}
+    
+    </style>
+    </head>
 <body>
-
+<div class="main">
+    <div class="container">
+        <nav class="navbar">
+            <div>
+                <a href="#"><img src="images/deveire-logo.png"
+                    srcset="images/deveire-logo@2x.png 2x,
+                            images/deveire-logo@3x.png 3x" class="deveire-logo"></a>
+            </div>
+            <ul class="nav-list">
+                <li class="list-item"><a href="#">Home</a></li>
+                <li class="list-item"><a href="#">Features</a></li>
+                <li class="list-item"><a href="#"></a>Pages</a></li>
+                <li class="list-item"><a href="#"></a>Porfolio</a></li>
+                <li class="list-item"><a href="#"></a>Blog</a></li>
+                <li class="list-item"><a href="#"></a>Shop</a></li>
+                <li class="list-item"><a href="#"></a>ShortCodes</a></li>
+            </ul>
+        </nav>
+    </div>
 <h1>Deveire Frontend Challenge</h1>
-<p>This page is the <code>index.html</code> of <code>deveire-frontent-challenge</code>.</p>
-
+<p><span class="Create-just-what-you-need-for-your-Perfect-Website-Choose-from">
+    Create just what you need for your Perfect Website. Choose from a wide
+  range of Elements & simply put them on your own Canvas.
+  </span></p>
+<!-- <p>This page is the <code>index.html</code> of <code>deveire-frontent-challenge</code>.</p> -->
+</div>
 </body>
 </html>
