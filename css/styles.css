@@ -638,6 +638,10 @@ hr {
 		cursor: pointer; 
 	}
 
+	.navbar { 
+		padding: 0; 
+	}
+	
 	.nav-list { 
 		background: rgba(27,37,51,.7); 
 		backdrop-filter: blur(1rem);
