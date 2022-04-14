@@ -1,8 +1,3 @@
-/* @import url(https://fonts.googleapis.com/css?family=Raleway); 
-@import url(https://fonts.googleapis.com/css?family=Raleway-SemiBold); 
-@import url(https://fonts.googleapis.com/css?family=Raleway-Bold); 
-@import url(https://fonts.googleapis.com/css?family=Raleway-ExtraBold);  */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,4 +40,177 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* Start Styling */
+h3 {
+	display: block;
+	font-family: Raleway;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.03;
+	text-align: center;
+	color: #444;
+	margin: 61px 0 12px;
+	text-transform: uppercase;
+	color: #444;
+}
+
+h4 {
+	font-family: Lato;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.38;
+	text-align: center;
+	color: #444;
+	margin-bottom: 60px;
+}
+
+/* Smart Pricing*/
+.smart-pricing-faq { 
+	max-width: 1136px; 
+	margin: 0 auto; 
+	padding: 10px 0; gap: 40px;  
+}
+
+.faq-col { 
+	flex-basis:50%; 
+}
+
+.faq-item {
+	padding-bottom: 57px;
+	border-bottom: 1px solid #eee;
+}
+
+.faq-item h5 { 
+	font-family: Raleway;
+	font-size: 18px;
+	font-weight: 600;
+	color: #444;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.faq-item p { 
+	font-family: Lato;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.7;
+	text-align: justify;
+	color: #666;
+}
+
+.faq-col > div:last-child { 
+	border-bottom: 1px solid #fff; 
+}
+
+/* Bottom CTA */
+.bottom-cta {
+	text-align: center;
+	padding-bottom: 65px;
+	background-color: #f2f1f2;
+	border-bottom:5px solid #c6c6c6;
+	overflow: hidden;
+}
+
+.bottom-cta button {
+	height: 50px;
+	border: none;
+	border-radius: 2.1px;
+	color: #fff;
+	background-color: #53777a;
+	font-family: Lato;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.83;
+	letter-spacing: 0.9px;
+	outline: none; 
+}
+
+.fa-star:before, .fa-user:before {  
+	font-size: 15px;
+	vertical-align: top;
+	padding-right: 6px;
+}
+
+button.start {
+	width: 322px;
+	background-color: #53777a;
+	border-bottom:4px solid #476163;
+}
+
+button.signup {
+	width: 362px;
+	background-color: #c02942;
+	border-bottom:4px solid #a30c25;
+	padding: 0 17px;
+}
+
+.bottom-cta-content {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.bottom-cta-content button, .bottom-cta-content p {
+	text-transform: uppercase;
+}
+.bottom-cta-content p { 
+	font-size: 18px;
+	color: #444;
+	padding: 20px;
+	letter-spacing: 0.9px;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+/* Footer */
+footer { 
+	max-width:1600px; 
+	border-top:2px solid #fff;
+	display: flex; 
+	height:142px; 
+	background: #1e1e1e; 
+	justify-content: space-around; 
+	align-items: center; 
+}
+
+footer p { 
+	font-family: Lato; 
+	font-size:15px; 
+	font-weight: 300; 
+	line-height: 1.71; 
+	letter-spacing: 0.14px; 
+	color: #999; 
+}
+
+p.icons { 
+	text-align: right; 
+}
+
+p.icons i { 
+	margin-right:17px; 
+}
+
+p.icons i:last-child { 
+	margin-right:0; 
+}
+
+p.contact i { 
+	padding: 0 4px; 
+}
+
+footer div p:last-child { 
+	padding-bottom: 10px; 
+}
+
+.terms-use { display: block; }
+
+hr { 
+    background: url('../images/separator.png') no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: 24px;
+    border: 0;
+    position: relative;
 }
