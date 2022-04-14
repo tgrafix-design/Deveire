@@ -42,6 +42,92 @@ table {
 	border-spacing: 0;
 }
 
+/* Navbar and Header */
+.container { 
+	max-width: 1600px; 
+	height: 697px; 
+	margin: 0 auto;
+	background:#404951 url('../images/deveire-background.jpg') no-repeat top center;
+}
+
+.navbar { 
+	max-width: 1136px;
+	padding: 0 20px;
+	height: 100px; 
+	color: #fff; 
+	display: flex; 
+	justify-content: space-between;
+	align-items: center; 
+	margin: 0 auto;
+	border-bottom:1px solid rgba(255,255,255,0)
+}
+
+.nav-list { 
+	list-style-type: none; 
+	z-index: 999; 
+}
+
+.nav-list .list-item { 
+	display: inline-block; 
+	padding: 20px 10px; 
+	list-style-type: none; 
+}
+
+.nav-list .list-item:last-child { 
+	padding-right:0; 
+}
+
+.navbar a { 
+	display:block;
+	font-size: 13px; 
+	font-family: 'Raleway'; 
+	font-weight:700; 
+	color: #fff; 
+	text-decoration: none;
+	letter-spacing: 1.3px;
+	text-transform: uppercase;
+}
+
+.navbar a:hover { 
+	opacity: .5;   
+}
+
+.slider { 
+	width: auto;
+	height: 596px;
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	justify-content: center;
+	border-top:1px solid rgba(255,255,255,.18); 
+}
+
+.slider h1 { 
+	text-align: center;
+	font-family: Raleway;
+	font-size: 64px;
+	font-weight: 800;
+	letter-spacing: 3.2px;
+	color: #eee;
+	text-shadow: 0.5px 0.9px 1px rgba(1, 2, 0, 0.15);
+	text-transform: uppercase;
+	margin-bottom: 27px; 
+}
+
+.slider p {
+	width: 60%;
+	font-family: Lato;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.5;
+	text-align: center;
+	color: #eee;
+}
+
+img.deveire-logo { 
+	width: 152px; 
+}
+
 /* Start Styling */
 h3 {
 	display: block;
@@ -70,7 +156,8 @@ h4 {
 .smart-pricing-faq { 
 	max-width: 1136px; 
 	margin: 0 auto; 
-	padding: 10px 0; gap: 40px;  
+	padding: 10px 20px; 
+	gap: 40px;  
 }
 
 .faq-col { 
