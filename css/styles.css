@@ -639,11 +639,12 @@ hr {
 	}
 
 	.nav-list { 
-		background: rgba(27,37,51,.98); 
+		background: rgba(27,37,51,.7); 
+		backdrop-filter: blur(1rem);
 		list-style-type: none; 
 		width: 100%; 
 		text-align: center; 
-		margin-top: 10px; 
+		margin: 14px 0; 
 		display:none; 
 	}
 
