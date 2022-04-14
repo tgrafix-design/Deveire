@@ -641,10 +641,10 @@ hr {
 	.navbar { 
 		padding: 0; 
 	}
-	
+
 	.nav-list { 
 		background: rgba(27,37,51,.7); 
-		backdrop-filter: blur(1rem);
+		backdrop-filter: blur(1.5rem);
 		list-style-type: none; 
 		width: 100%; 
 		text-align: center; 
