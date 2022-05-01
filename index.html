@@ -2,6 +2,7 @@
 <html>
 <head>
     <script src="js/aos.js"></script>
+    <script src="js/rellax.min.js"></script>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"/> 
@@ -26,14 +27,26 @@
             </div>
 
             <ul class="nav-list" id="navList" >
-                <li class="list-item"><a href="#">Home</a></li>
-                <li class="list-item"><a href="#">Features</a></li>
-                <li class="list-item"><a href="#">Pages</a></li>
-                <li class="list-item"><a href="#">Portfolio</a></li>
-                <li class="list-item"><a href="#">Blog</a></li>
-                <li class="list-item"><a href="#">Shop</a></li>
-                <li class="list-item"><a href="#">ShortCodes</a></li>
+                <li class="list-item animate__animated animate__fadeInUp"><a href="#">Home</a></li>
+                <li class="list-item animate__animated animate__fadeInUp"><a href="#">Features</a></li>
+                <li class="list-item animate__animated animate__fadeInUp"><a href="#">Pages</a></li>
+                <li class="list-item animate__animated animate__fadeInUp"><a href="#">Portfolio</a></li>
+                <li class="list-item animate__animated animate__fadeInUp"><a href="#">Blog</a></li>
+                <li class="list-item animate__animated animate__fadeInUp"><a href="#">Shop</a></li>
+                <li class="list-item animate__animated animate__fadeInUp"><a href="#">ShortCodes</a></li>
             </ul>
+            <style>
+                :root {
+                        --dur: .2s;
+                }
+                .nav-list li:nth-child(1) { animation-duration: var(--dur); animation-delay: .2s; }
+                .nav-list li:nth-child(2) { animation-duration: var(--dur); animation-delay: .25s; }
+                .nav-list li:nth-child(3) { animation-duration: var(--dur); animation-delay: .3s; }
+                .nav-list li:nth-child(4) { animation-duration: var(--dur); animation-delay: .35s; }
+                .nav-list li:nth-child(5) { animation-duration: var(--dur); animation-delay: .4s; }
+                .nav-list li:nth-child(6) { animation-duration: var(--dur); animation-delay: .45s; }
+                .nav-list li:nth-child(7) { animation-duration: var(--dur); animation-delay: .5s; }
+            </style>
             <div class="menu button" id="toggle-btn">
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
@@ -47,50 +60,53 @@
                 range of Elements & simply put them on your own Canvas.</p>
         </div>
     </div>
-    <span class="hero_scroll aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+
+    <span class="hero_scroll animate__animated animate__fadeInDown" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
         <i class="fa fa-chevron-down" aria-hidden="true"></i>
     </span>
-<h3 class="features-h3 aos-init aos-animate" data-aos="zoom-in">Features Overview</h3>
-<h4 class="features-h4 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Some of the Features that are gonna blow your mind off</h4>
+
+    <h3 class="features-h3 aos-init aos-animate" data-aos="zoom-in">Features Overview</h3>
+    <h4 class="features-h4 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Some of the Features that are gonna blow your mind off</h4>
+
 <div class="features">
     <div class="feature-col">
-        <div class="feature-item">
+        <div class="feature-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
             <h5>Responsive Layout</h5>
             <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
         </div>
-        <div class="feature-item">
+        <div class="feature-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
             <h5>Responsive Layout</h5>
             <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
         </div>
-        <div class="feature-item">
-            <h5>Responsive Layout</h5>
-            <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-        </div>
-    </div>
-    <div class="feature-col">
-        <div class="feature-item">
-            <h5>Responsive Layout</h5>
-            <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-        </div>
-        <div class="feature-item">
-            <h5>Responsive Layout</h5>
-            <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-        </div>
-        <div class="feature-item">
+        <div class="feature-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
             <h5>Responsive Layout</h5>
             <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
         </div>
     </div>
     <div class="feature-col">
-        <div class="feature-item">
+        <div class="feature-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
             <h5>Responsive Layout</h5>
             <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
         </div>
-        <div class="feature-item">
+        <div class="feature-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
             <h5>Responsive Layout</h5>
             <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
         </div>
-        <div class="feature-item">
+        <div class="feature-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
+            <h5>Responsive Layout</h5>
+            <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
+        </div>
+    </div>
+    <div class="feature-col">
+        <div class="feature-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
+            <h5>Responsive Layout</h5>
+            <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
+        </div>
+        <div class="feature-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
+            <h5>Responsive Layout</h5>
+            <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
+        </div>
+        <div class="feature-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
             <h5>Responsive Layout</h5>
             <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
         </div>
@@ -171,21 +187,21 @@
 
 <div class="smart-pricing-faq">
     <div class="faq-col">
-        <div class="faq-item">
+        <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
             <h5>Q. How do I become an author?</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum
                 molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae
                 nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at
                 quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas.</p>
         </div>
-        <div class="faq-item">
+        <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
             <h5>Q. How do I become an author?</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum
                 molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae
                 nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at
                 quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas.</p>
         </div>
-        <div class="faq-item litem">
+        <div class="faq-item litem aos-init aos-animate" data-aos="fade-up" data-aos-duration="900">
             <h5>Q. How do I become an author?</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum
                 molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae
@@ -194,7 +210,7 @@
         </div>
     </div>
     <div class="faq-col">
-        <div class="faq-item">
+        <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
             <h5>Q. How do I become an author?</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad odio ab quis architecto
                 recusandae doloremque incidunt! Eius, quidem, pariatur necessitatibus commodi aliquid
@@ -204,7 +220,7 @@
                 dignissimos eveniet quae debitis ratione assumenda tempore officiis fugiat dolor. Saepe
                 iusto praesentium ullam aliquam impedit.</p>
         </div>
-        <div class="faq-item litem">
+        <div class="faq-item litem aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
             <h5>Q. How do I become an author?</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad odio ab quis architecto
                 recusandae doloremque incidunt! Eius, quidem, pariatur necessitatibus commodi aliquid
@@ -247,6 +263,8 @@
     toggleBtn.addEventListener('click', () => {
         naviList.classList.toggle('active');
     })
+
+    var rellax = new Rellax('.rellax');
 </script>
 </body>
 </html>

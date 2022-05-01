@@ -150,15 +150,15 @@ img.deveire-logo {
 
 .hero_scroll {
     position: absolute;
-    bottom: 60px;
     width: 200px;
-    margin: auto;
+    margin: 40px auto;
     display: block;
     cursor: pointer;
     padding-bottom: 40px;
     left: 0;
     right: 0;
-    text-transform: uppercase; }
+    text-transform: uppercase; 
+}
 
 .hero_scroll .fa-chevron-down {
     margin-top: 20px;
