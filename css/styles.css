@@ -148,6 +148,70 @@ img.deveire-logo {
 	width: 152px; 
 }
 
+.hero_scroll {
+    position: absolute;
+    bottom: 60px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    padding-bottom: 40px;
+    left: 0;
+    right: 0;
+    text-transform: uppercase; }
+
+.hero_scroll .fa-chevron-down {
+    margin-top: 20px;
+    display: block;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    color: #1abc9c; 
+}
+.fa-chevron-down { 
+    width: 40px;
+    font-size: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    color: #FF4081;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+
+.fa-chevron-up.down::before {
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    50% {
+      -webkit-transform: translate(0, 10px);
+              transform: translate(0, 10px); }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); } }
+
+
+  @keyframes pulse {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    50% {
+      -webkit-transform: translate(0, 10px);
+              transform: translate(0, 10px); }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); } }
+
 /* Start Styling */
 h3 {
 	display: block;
@@ -326,21 +390,48 @@ h4.features-h4 {
 	width: 100%;
 	height: 48px;
 	border-radius: 3px;
-	border: solid 1px #159a80; 
-	background-color: #1abc9c;
+    color: #fff;
 	border: solid 1px #ab2f2c;
 	background-color: #d9534f;
-	font-family: Lato;
+	font: 18px Lato;
 	font-size: 18px;
 	font-weight: 400;
 	letter-spacing: 0.18px;
-	color: #fff;
+    position: relative;
+    transition: ease-out 0.3s;
+    z-index: 1;
 }
 
-.pricing-item.special button {
+.pricing-item .button:before { 
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0; 
+    left: 50%; 
+    right: 50%; 
+    bottom:0; 
+    opacity: 0; 
+    content: "";
+    background-color: #ab2f2c;
+}
+
+.pricing-item .button:hover:before {
+    transition: 0.5s all ease;
+    left: 0; 
+    right: 0; 
+    opacity: 1; 
+    z-index: -1;
+}
+
+
+.pricing-item.special .button {
 	border: solid 1px #159a80; 
 	background-color: #1abc9c;
 }
+
+.pricing-item.special .button:before { 
+    background-color: #159a80;
+}
+
 
 .pricing-item.special .price, .pricing-item.special .sign { color: #1abc9c; }
 
@@ -638,17 +729,12 @@ hr {
 		cursor: pointer; 
 	}
 
-	.navbar { 
-		padding: 0; 
-	}
-
 	.nav-list { 
-		background: rgba(27,37,51,.7); 
-		backdrop-filter: blur(1.5rem);
+		background: rgba(27,37,51,.98); 
 		list-style-type: none; 
 		width: 100%; 
 		text-align: center; 
-		margin: 14px 0; 
+		margin-top: 10px; 
 		display:none; 
 	}
 

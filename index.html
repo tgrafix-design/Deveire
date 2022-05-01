@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="js/aos.js"></script>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"/> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link href="/css/styles.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    
     <meta title="Deveire Frontend Challenge">
+
+
 </head>
 <body>
 
@@ -15,7 +22,7 @@
             <div>
                 <a href="#"><img src="images/deveire-logo.png"
                     srcset="images/deveire-logo@2x.png 2x,
-                            images/deveire-logo@3x.png 3x" class="deveire-logo"></a>
+                            images/deveire-logo@3x.png 3x" class="deveire-logo animate__animated animate__fadeInLeft"></a>
             </div>
 
             <ul class="nav-list" id="navList" >
@@ -35,14 +42,16 @@
         </nav>
 
         <div class="slider">
-            <h1>Welcome to Deveire</h1>
+            <h1 class="animate__animated animate__fadeInDown">Welcome to Deveire</h1> 
             <p class="h1-text">Create just what you need for your Perfect Website. Choose from a wide
                 range of Elements & simply put them on your own Canvas.</p>
         </div>
     </div>
-
-<h3 class="features-h3">Features Overview</h3>
-<h4 class="features-h4">Some of the Features that are gonna blow your mind off</h4>
+    <span class="hero_scroll aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </span>
+<h3 class="features-h3 aos-init aos-animate" data-aos="zoom-in">Features Overview</h3>
+<h4 class="features-h4 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Some of the Features that are gonna blow your mind off</h4>
 <div class="features">
     <div class="feature-col">
         <div class="feature-item">
@@ -89,8 +98,11 @@
 </div>
 
 <hr />
-<h3>Smart Pricing</h3>
-<h4>Flexible & Easy Pricing for wide Audience Groups</h4>
+<h3 class="features-h3 aos-init aos-animate" data-aos="zoom-in">Smart Pricing</h3>
+<h4 class="features-h4 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+    Flexible & Easy Pricing for wide Audience Groups
+</h4>
+
 <div class="pricing">
     <div class="pricing-item">
         <h5>Starter</h5>
@@ -152,8 +164,10 @@
 </div> 
 
 <hr />
-<h3>Smart Pricing</h3>
-<h4>Flexible & Easy Pricing for wide Audience Groups</h4>
+<h3 class="features-h3 aos-init aos-animate" data-aos="zoom-in">Smart Pricing</h3>
+<h4 class="features-h4 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+    Flexible & Easy Pricing for wide Audience Groups
+</h4>
 
 <div class="smart-pricing-faq">
     <div class="faq-col">
@@ -204,11 +218,13 @@
 </div> 
 
 <div class="bottom-cta">
-    <h3>Starter's Guide to Create Landing Pages</h3>
-    <h4>Building a Landing Page was never so Easy & Interactive</h4>
+    <h3 class="features-h3  aos-init aos-animate" data-aos="zoom-in">Starter's Guide to Create Landing Pages</h3>
+    <h4 class="features-h4 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+        Building a Landing Page was never so Easy & Interactive
+    </h4>
     <div class="bottom-cta-content">
-        <button class="button start"><i class="fa fa-star" aria-hidden="true"></i> Start Your Free Trial</button><p>- or -</p>
-        <button class="button signup"><i class="fa fa-user" aria-hidden="true"></i> Sign up for a Subscription</button>
+        <button class="button start aos-init aos-animate" data-aos="fade-right"><i class="fa fa-star" aria-hidden="true"></i> Start Your Free Trial</button><p>- or -</p>
+        <button class="button signup aos-init aos-animate" data-aos="fade-left"><i class="fa fa-user" aria-hidden="true"></i> Sign up for a Subscription</button>
     </div>
 </div>
 <footer>
@@ -224,6 +240,8 @@
 </div>
 
 <script>
+    AOS.init();
+
     const toggleBtn = document.getElementById('toggle-btn');
     const naviList = document.getElementById('navList');
     toggleBtn.addEventListener('click', () => {
