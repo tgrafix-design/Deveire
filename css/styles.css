@@ -96,6 +96,7 @@ table {
 }
 
 .navbar a { 
+    transition: ease-out 0.3s;
 	display:block;
 	font-size: 13px; 
 	font-family: 'Raleway'; 
@@ -107,7 +108,8 @@ table {
 }
 
 .navbar a:hover { 
-	opacity: .5;   
+	opacity: .5;
+    transition: ease-out 0.3s;
 }
 
 .slider { 
@@ -572,6 +574,7 @@ button.signup {
 }
 
 .bottom-cta h3 { 
+    margin-top:61px;
 	margin-bottom: 15px; 
 }
 .bottom-cta h4 { 
